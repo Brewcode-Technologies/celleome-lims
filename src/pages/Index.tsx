@@ -1,13 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import BenefitsSection from "@/components/BenefitsSection";
+import ComplianceSection from "@/components/ComplianceSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>LabFlow - Advanced LIMS Solution for Modern Laboratories</title>
+        <meta
+          name="description"
+          content="Streamline lab workflows, ensure compliance, and boost efficiency with LabFlow's cloud-based Laboratory Information Management System. Reduce errors and accelerate turnaround times by up to 50%."
+        />
+        <meta
+          name="keywords"
+          content="LIMS, laboratory information management system, lab software, pharmaceutical, biotech, research labs, sample tracking, workflow automation"
+        />
+        <link rel="canonical" href="https://labflow.com" />
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <FeaturesSection />
+          <BenefitsSection />
+          <ComplianceSection />
+          <WhyUsSection />
+          <CTASection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
