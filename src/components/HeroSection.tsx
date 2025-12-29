@@ -1,76 +1,65 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Scene } from "@/components/ui/hero-section-3d";
-import { Cpu, ShieldCheck, Layers, Zap } from "lucide-react";
-
-const features = [
-  {
-    icon: Cpu,
-    title: "Performance",
-    description: "Ultra-fast data processing in every situation.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Security",
-    description: "Advanced protection for complete peace of mind.",
-  },
-  {
-    icon: Layers,
-    title: "Modularity",
-    description: "Easy integration with existing architecture.",
-  },
-  {
-    icon: Zap,
-    title: "Responsiveness",
-    description: "Instant response to every command.",
-  },
-];
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-background">
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-32 pb-20">
-        <div className="flex flex-col items-center text-center mb-16">
-          <Badge variant="outline" className="mb-6 border-primary/30 bg-primary/5 text-primary">
-            ✨ Next Generation Tools
+    <section className="relative min-h-screen w-full overflow-hidden bg-background flex items-center pt-20">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          {/* Badge */}
+          <Badge variant="outline" className="mb-8 border-primary/30 bg-primary/5 text-primary animate-fade-up">
+            <Sparkles className="w-4 h-4 mr-2" />
+            Coming Soon — Join the Waitlist
           </Badge>
 
-          <div className="max-w-3xl">
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-              Discover minimalism and power in{" "}
-              <span className="text-gradient">one place</span>
-            </h1>
+          {/* Headline */}
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-fade-up-delay-1">
+            Revolutionize Your Lab with{" "}
+            <span className="text-gradient">Advanced LIMS</span>
+          </h1>
 
-            <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-              Designed with aesthetics and performance in mind. Experience ultra-fast processing, advanced security, and intuitive design.
-            </p>
+          {/* Subheadline */}
+          <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-4 max-w-3xl animate-fade-up-delay-2">
+            Streamline Lab Workflows, Ensure Compliance, and Boost Efficiency. Discover the power of our cloud-based Laboratory Information Management System (LIMS) – designed for pharmaceutical, biotech, and research labs.
+          </p>
+          
+          <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl animate-fade-up-delay-2">
+            From sample tracking to automated reporting, our intuitive platform digitizes your processes, reduces errors, and accelerates turnaround times by up to 50%.
+          </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl">
-                Get Started
-              </Button>
-              <Button variant="heroOutline" size="xl">
-                Learn More
-              </Button>
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up-delay-3">
+            <Button variant="hero" size="xl" className="group">
+              Join the Waitlist
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button variant="heroOutline" size="xl">
+              Explore Features
+            </Button>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap gap-8 justify-center mt-12 pt-8 border-t border-border animate-fade-up-delay-3">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">50%</div>
+              <div className="text-sm text-muted-foreground">Faster TAT</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">99%</div>
+              <div className="text-sm text-muted-foreground">Uptime</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">30%</div>
+              <div className="text-sm text-muted-foreground">Capacity Boost</div>
             </div>
           </div>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="glass-card p-6 rounded-xl border border-border/50 hover:border-primary/30 transition-all duration-300"
-            >
-              <feature.icon className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
-              <p className="text-sm text-muted-foreground">{feature.description}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
-      <div className="absolute inset-0 opacity-30">
+      {/* 3D Background */}
+      <div className="absolute inset-0 opacity-25">
         <Scene />
       </div>
     </section>
