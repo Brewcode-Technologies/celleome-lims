@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
-import celleomeLogo from "@/assets/Celleome_Logo-white.png"
+import celleomeLogo from "@/assets/Celleome_Logo-white-icon.png"
 
 interface NavItem {
   name: string
@@ -55,7 +55,7 @@ export function NavBar({ items, className }: NavBarProps) {
   return (
     <div
       className={cn(
-        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 transition-all duration-500 ease-in-out",
+        "fixed sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 transition-all duration-500 ease-in-out",
         isScrolled ? "sm:pt-6" : "sm:pt-8",
         className,
       )}

@@ -185,3 +185,36 @@
     transform: translateY(0);
   }
 }
+.lims-flow {
+  offset-anchor: 10px 0px;
+  animation: lims-animation-path;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.lims-light-1 {
+  offset-path: path("M 40 10 v 15 q 0 5 5 5 h 50 q 5 0 5 5 v 35");
+}
+
+.lims-light-2 {
+  offset-path: path("M 105 10 v 12 q 0 5 5 5 h 25 q 5 0 5 5 v 38");
+}
+
+.lims-light-3 {
+  offset-path: path("M 175 10 v 12 q 0 5 -5 5 h -25 q -5 0 -5 5 v 38");
+}
+
+.lims-light-4 {
+  offset-path: path("M 240 10 v 15 q 0 5 -5 5 h -50 q -5 0 -5 5 v 35");
+}
+
+@keyframes lims-animation-path {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}

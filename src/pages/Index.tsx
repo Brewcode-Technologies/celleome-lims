@@ -1,13 +1,14 @@
 import { Helmet } from "react-helmet-async";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import SyntheticHero from "@/components/ui/synthetic-hero";
+import { HowItWorks } from "@/components/ui/how-it-works";
 import { Features } from "@/components/ui/features-8";
 import { WhyChooseUs } from "@/components/ui/why-choose-us";
-import { Home, Zap, Shield, Award, Users } from "lucide-react";
+import CelleomeFooter from "@/components/ui/celleome-footer";
+import { Home, Zap, Shield, Award, Users, Workflow } from "lucide-react";
 import BenefitsSection from "@/components/BenefitsSection";
 import ComplianceSection from "@/components/ComplianceSection";
 import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <div className="min-h-screen bg-background relative">
         <NavBar items={[
           { name: 'Home', url: '#', icon: Home },
+          { name: 'How it works', url: '#how-it-works', icon: Workflow },
           { name: 'Features', url: '#features', icon: Zap },
           { name: 'Benefits', url: '#benefits', icon: Award },
           { name: 'Compliance', url: '#compliance', icon: Shield },
@@ -35,13 +37,14 @@ const Index = () => {
         ]} />
         <SyntheticHero />
         <main>
+          <HowItWorks />
           <Features />
           <BenefitsSection />
           <ComplianceSection />
           <WhyChooseUs />
           <CTASection />
         </main>
-        <Footer />
+        <CelleomeFooter />
       </div>
     </>
   );
