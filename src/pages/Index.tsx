@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import SyntheticHero from "@/components/ui/synthetic-hero";
+import { Features } from "@/components/ui/features-8";
+import { WhyChooseUs } from "@/components/ui/why-choose-us";
 import { Home, Zap, Shield, Award, Users } from "lucide-react";
-import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ComplianceSection from "@/components/ComplianceSection";
-import WhyUsSection from "@/components/WhyUsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -35,10 +35,10 @@ const Index = () => {
         ]} />
         <SyntheticHero />
         <main>
-          <FeaturesSection />
+          <Features />
           <BenefitsSection />
           <ComplianceSection />
-          <WhyUsSection />
+          <WhyChooseUs />
           <CTASection />
         </main>
         <Footer />
