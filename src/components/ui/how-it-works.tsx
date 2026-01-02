@@ -13,23 +13,43 @@ export function HowItWorks() {
           </p>
         </div>
         
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-16">
           <LimsWorkflow
             circleText="LIMS"
             badgeTexts={{
-              first: "Sample Intake",
-              second: "Data Processing", 
-              third: "Quality Control",
-              fourth: "Final Report"
+              first: "Audit Trails",
+              second: "Time-Stamped Records", 
+              third: "User Attribution",
+              fourth: "Data Preservation"
             }}
             buttonTexts={{
               first: "Celleome",
               second: "v3_lims"
             }}
-            title="Laboratory data flows seamlessly through our LIMS"
+            title="Complete audit trails with secure data workflows"
             lightColor="#3ee0cf"
             className="mx-auto"
           />
+        </div>
+        
+        {/* Additional Compliance Features */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
+            <h3 className="font-semibold text-sm text-foreground mb-1">Automatic Calculations</h3>
+            <p className="text-xs text-muted-foreground">Automated processing</p>
+          </div>
+          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
+            <h3 className="font-semibold text-sm text-foreground mb-1">Controlled Workflows</h3>
+            <p className="text-xs text-muted-foreground">Structured processes</p>
+          </div>
+          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
+            <h3 className="font-semibold text-sm text-foreground mb-1">Secure Data Storage</h3>
+            <p className="text-xs text-muted-foreground">Protected repositories</p>
+          </div>
+          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
+            <h3 className="font-semibold text-sm text-foreground mb-1">Advanced Search</h3>
+            <p className="text-xs text-muted-foreground">Quick data retrieval</p>
+          </div>
         </div>
       </div>
     </section>

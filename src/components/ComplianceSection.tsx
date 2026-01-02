@@ -46,7 +46,7 @@ const ComplianceSection = () => {
             <span className="text-gradient">Without Complexity</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Navigate regulations effortlessly with built-in safeguards for data integrity. Our process-first approach ensures 100% regulatory adherence.
+            Navigate regulations effortlessly with built-in safeguards for ALCOA+ data integrity. Electronic signatures, CAPA management, and complete audit trails ensure 100% regulatory adherence.
           </p>
         </div>
 

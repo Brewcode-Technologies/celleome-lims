@@ -126,8 +126,8 @@ interface HeroProps {
 }
 
 const SyntheticHero = ({
-	title = "Revolutionize your laboratory workflow with AI-powered LIMS.",
-	description = "Celleome Diagnostics offers affordable, accessible, high-quality Laboratory Information Management System (LIMS). Digitizing laboratories with AI-powered solutions.",
+	title = "Digitizing laboratories for simplifying compliance.",
+	description = "Affordable, accessible, high-quality Laboratory Information Management System (LIMS) for all. Transform your lab operations with our comprehensive solution.",
 	badgeText = "AI-Powered LIMS",
 	badgeLabel = "Innovation",
 	ctaButtons = [

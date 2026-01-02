@@ -1,6 +1,6 @@
 "use client";
 
-import { Shield, Zap, Users, Award, Database, CheckCircle } from "lucide-react";
+import { Shield, Zap, Users, Award, Database, CheckCircle, Code, Wrench } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
 
@@ -21,9 +21,9 @@ export function WhyChooseUs() {
           />
           <GridItem
             area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-            icon={<Zap className="h-4 w-4" />}
-            title="Streamlined Workflows"
-            description="Automated processes and intelligent routing eliminate bottlenecks and optimize laboratory operations."
+            icon={<Code className="h-4 w-4" />}
+            title="Open-Source Advantage"
+            description="Transparency, flexibility, and extendibility with strong community support. Zero vendor lock-in and no hidden license fees."
           />
           <GridItem
             area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
@@ -39,9 +39,9 @@ export function WhyChooseUs() {
           />
           <GridItem
             area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-            icon={<Users className="h-4 w-4" />}
-            title="24/7 Expert Support"
-            description="Our dedicated team of LIMS specialists is always ready to help you succeed."
+            icon={<Wrench className="h-4 w-4" />}
+            title="Expert Implementation"
+            description="End-to-end solution from requirements gathering to go-live, training, and post-deployment support."
           />
         </ul>
       </div>

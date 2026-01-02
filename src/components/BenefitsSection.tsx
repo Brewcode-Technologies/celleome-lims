@@ -22,9 +22,9 @@ const benefits = [
   },
   {
     icon: Shield,
-    title: "System Availability",
-    impact: "99.95%",
-    description: "Enterprise-grade reliability with robust cloud infrastructure and secure data storage.",
+    title: "100% Regulatory Compliance",
+    impact: "100%",
+    description: "Complete compliance with 21 CFR Part 11, GMP/GLP standards, and full audit trails.",
   },
   {
     icon: DollarSign,
@@ -67,7 +67,7 @@ const BenefitsSection = () => {
               <span className="text-gradient">Measurable Results</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10">
-              Backed by real-world implementations in pharma QC, R&D, and clinical labs — trusted by leading organizations.
+              Low-cost, low-maintenance system with robust data security. Open-source solution with zero vendor lock-in and no hidden license fees.
             </p>
 
             {/* Benefits List */}
