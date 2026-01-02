@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import Navbar from "@/components/Navbar";
+import { NavBar } from "@/components/ui/tubelight-navbar";
+import { Home, Zap, Shield, Award, Users } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
@@ -25,7 +26,13 @@ const Index = () => {
       </Helmet>
       
       <div className="min-h-screen bg-background">
-        <Navbar />
+        <NavBar items={[
+          { name: 'Home', url: '#', icon: Home },
+          { name: 'Features', url: '#features', icon: Zap },
+          { name: 'Benefits', url: '#benefits', icon: Award },
+          { name: 'Compliance', url: '#compliance', icon: Shield },
+          { name: 'Why Us', url: '#why-us', icon: Users }
+        ]} />
         <main>
           <HeroSection />
           <FeaturesSection />
