@@ -31,7 +31,7 @@ const complianceItems = [
 
 const ComplianceSection = () => {
   return (
-    <section id="compliance" className="py-24 lg:py-32 relative bg-secondary/30">
+    <section id="compliance" className="py-24 lg:py-32 relative">
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       

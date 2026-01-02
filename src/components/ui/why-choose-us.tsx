@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function WhyChooseUs() {
   return (
-    <section className="py-16 md:py-32" id="why-us">
+    <section className="py-16 md:py-32 bg-muted/20" id="why-us">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Celleome</h2>
@@ -16,14 +16,14 @@ export function WhyChooseUs() {
           <GridItem
             area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
             icon={<Shield className="h-4 w-4" />}
-            title="Enterprise-Grade Security"
-            description="End-to-end encryption, role-based access control, and comprehensive audit trails ensure your data is always protected."
+            title="Advanced Data Protection"
+            description="Multi-layered security with encryption, access controls, and audit trails keeps your sensitive data secure."
           />
           <GridItem
             area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
             icon={<Zap className="h-4 w-4" />}
-            title="50% Faster Turnaround"
-            description="Automated workflows and intelligent sample tracking accelerate your lab operations significantly."
+            title="Streamlined Workflows"
+            description="Automated processes and intelligent routing eliminate bottlenecks and optimize laboratory operations."
           />
           <GridItem
             area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
@@ -34,8 +34,8 @@ export function WhyChooseUs() {
           <GridItem
             area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
             icon={<Award className="h-4 w-4" />}
-            title="99% Compliance Rate"
-            description="Meet all regulatory requirements with built-in compliance features and automated reporting."
+            title="Regulatory Ready"
+            description="Built-in compliance features and automated reporting ensure you meet all regulatory requirements effortlessly."
           />
           <GridItem
             area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"

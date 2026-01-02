@@ -28,7 +28,7 @@ const ShaderPlane = ({
 	useFrame((state) => {
 		if (meshRef.current) {
 			const material = meshRef.current.material as THREE.ShaderMaterial;
-			material.uniforms.u_time.value = state.clock.elapsedTime * 0.5;
+			material.uniforms.u_time.value = state.clock.elapsedTime * 0.3;
 			material.uniforms.u_resolution.value.set(size.width, size.height, 1.0);
 		}
 	});
@@ -84,7 +84,7 @@ const fragmentShader = `
       vec2 i = p;
       float c = 0.0;
       float rot = r + u_time + p.x * 0.100;
-      for (float n = 0.0; n < 4.0; n++) {
+      for (float n = 0.0; n < 2.0; n++) {
           float rr = r + 0.15 * sin(u_time*0.7 + float(n) + r*2.0);
           p *= mat2(
               cos(rot - sin(u_time / 10.0)), sin(rot),
@@ -246,7 +246,7 @@ const SyntheticHero = ({
 			className="relative flex items-center justify-center min-h-screen overflow-hidden"
 		>
 			<div className="absolute inset-0 z-0">
-				<Canvas>
+	<Canvas dpr={[1, 1.5]} performance={{ min: 0.5 }}>
 					<ShaderPlane
 						vertexShader={vertexShader}
 						fragmentShader={fragmentShader}

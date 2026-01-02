@@ -43,17 +43,22 @@ function CelleomeFooter() {
   const contactInfo = [
     {
       icon: <Mail size={18} className="text-[#3ee0cf]" />,
-      text: "info@celleome.com",
-      href: "mailto:info@celleome.com",
+      text: "prashant.singh@icloud.com",
+      href: "mailto:prashant.singh@icloud.com",
     },
     {
       icon: <Phone size={18} className="text-[#3ee0cf]" />,
-      text: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      text: "+91 8847562006",
+      href: "tel:+918847562006",
     },
     {
       icon: <MapPin size={18} className="text-[#3ee0cf]" />,
-      text: "San Francisco, CA",
+      text: "Noida, UP",
+    },
+    {
+      icon: <Globe size={18} className="text-[#3ee0cf]" />,
+      text: "www.celleome.com",
+      href: "https://www.celleome.com",
     },
   ];
 

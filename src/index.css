@@ -190,8 +190,9 @@
   animation: lims-animation-path;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-delay: 1s;
+  will-change: offset-distance;
 }
 
 .lims-light-1 {

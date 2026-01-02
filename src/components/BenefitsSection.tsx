@@ -4,8 +4,8 @@ import benefitsImage from "@/assets/benefits-image.jpg";
 const benefits = [
   {
     icon: Clock,
-    title: "Higher Turnaround Times",
-    impact: "40-50%",
+    title: "Faster Turnaround Times",
+    impact: "50%",
     description: "Significantly improved TAT through automated workflows and exception-based management.",
   },
   {
@@ -17,7 +17,7 @@ const benefits = [
   {
     icon: Zap,
     title: "Equipment Utilization",
-    impact: "40-50%",
+    impact: "50%",
     description: "Improvement in equipment utilization through optimized scheduling and workflows.",
   },
   {
@@ -36,7 +36,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section id="benefits" className="py-24 lg:py-32 relative">
+    <section id="benefits" className="py-24 lg:py-32 relative bg-muted/20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}

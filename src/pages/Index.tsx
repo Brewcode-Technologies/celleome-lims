@@ -26,9 +26,9 @@ const Index = () => {
         <link rel="canonical" href="https://www.celleome.com" />
       </Helmet>
       
-      <div className="min-h-screen bg-background relative">
+      <div className="min-h-screen bg-background relative" id="top">
         <NavBar items={[
-          { name: 'Home', url: '#', icon: Home },
+          { name: 'Home', url: '#top', icon: Home },
           { name: 'How it works', url: '#how-it-works', icon: Workflow },
           { name: 'Features', url: '#features', icon: Zap },
           { name: 'Benefits', url: '#benefits', icon: Award },
