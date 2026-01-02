@@ -41,9 +41,6 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Login
-            </Button>
             <Button variant="hero" size="default">
               Join Waitlist
             </Button>
@@ -74,9 +71,6 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" size="sm" className="justify-start">
-                  Login
-                </Button>
                 <Button variant="hero" size="default">
                   Join Waitlist
                 </Button>
