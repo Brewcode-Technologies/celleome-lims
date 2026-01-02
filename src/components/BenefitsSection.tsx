@@ -4,33 +4,33 @@ import benefitsImage from "@/assets/benefits-image.jpg";
 const benefits = [
   {
     icon: Clock,
-    title: "Faster Turnaround Times",
+    title: "Higher Turnaround Times",
     impact: "40-50%",
-    description: "Improvement through automated approvals and exception-based management.",
-  },
-  {
-    icon: DollarSign,
-    title: "Cost Savings",
-    impact: "6-12mo",
-    description: "Payback period with low-maintenance, open-source architecture and no hidden fees.",
+    description: "Significantly improved TAT through automated workflows and exception-based management.",
   },
   {
     icon: TrendingUp,
-    title: "Increased Capacity",
-    impact: "30%",
-    description: "Boost in testing throughput and 40-50% better equipment utilization.",
-  },
-  {
-    icon: Shield,
-    title: "Reliability",
-    impact: "99%",
-    description: "System uptime with robust cloud infrastructure and secure data storage.",
+    title: "Increased Testing Capacity",
+    impact: ">30%",
+    description: "Boost in testing throughput enabling your lab to handle more samples efficiently.",
   },
   {
     icon: Zap,
-    title: "Efficiency Gains",
-    impact: "20-30%",
-    description: "Reduce transcription errors and optimize inventory to cut waste significantly.",
+    title: "Equipment Utilization",
+    impact: "40-50%",
+    description: "Improvement in equipment utilization through optimized scheduling and workflows.",
+  },
+  {
+    icon: Shield,
+    title: "System Availability",
+    impact: "99.95%",
+    description: "Enterprise-grade reliability with robust cloud infrastructure and secure data storage.",
+  },
+  {
+    icon: DollarSign,
+    title: "Quick ROI",
+    impact: "6-12mo",
+    description: "Payback period with low-cost, low-maintenance system and no hidden license fees.",
   },
 ];
 

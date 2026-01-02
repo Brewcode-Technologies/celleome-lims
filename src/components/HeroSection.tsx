@@ -11,7 +11,7 @@ const HeroSection = () => {
           {/* Badge */}
           <Badge variant="outline" className="mb-8 border-primary/30 bg-primary/5 text-primary animate-fade-up">
             <Sparkles className="w-4 h-4 mr-2" />
-            Coming Soon — Join the Waitlist
+            AI in Diagnostics — Celleome Diagnostics
           </Badge>
 
           {/* Headline */}
@@ -43,16 +43,20 @@ const HeroSection = () => {
           {/* Trust Indicators */}
           <div className="flex flex-wrap gap-8 justify-center mt-12 pt-8 border-t border-border animate-fade-up-delay-3">
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">50%</div>
-              <div className="text-sm text-muted-foreground">Faster TAT</div>
+              <div className="text-2xl font-bold text-foreground">40-50%</div>
+              <div className="text-sm text-muted-foreground">Higher TAT</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">99%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="text-2xl font-bold text-foreground">99.95%</div>
+              <div className="text-sm text-muted-foreground">System Availability</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">30%</div>
-              <div className="text-sm text-muted-foreground">Capacity Boost</div>
+              <div className="text-2xl font-bold text-foreground">&gt;30%</div>
+              <div className="text-sm text-muted-foreground">Increased Capacity</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">100%</div>
+              <div className="text-sm text-muted-foreground">Regulatory Compliance</div>
             </div>
           </div>
         </div>

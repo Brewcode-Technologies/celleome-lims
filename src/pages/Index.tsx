@@ -12,16 +12,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>LabFlow - Advanced LIMS Solution for Modern Laboratories</title>
+        <title>Celleome Diagnostics - AI in Diagnostics | Advanced LIMS Solution</title>
         <meta
           name="description"
-          content="Streamline lab workflows, ensure compliance, and boost efficiency with LabFlow's cloud-based Laboratory Information Management System. Reduce errors and accelerate turnaround times by up to 50%."
+          content="Celleome Diagnostics offers affordable, accessible, high-quality Laboratory Information Management System (LIMS). Digitizing laboratories with AI-powered solutions."
         />
         <meta
           name="keywords"
-          content="LIMS, laboratory information management system, lab software, pharmaceutical, biotech, research labs, sample tracking, workflow automation"
+          content="Celleome Diagnostics, LIMS, laboratory information management system, AI in diagnostics, lab software, pharmaceutical, biotech, research labs"
         />
-        <link rel="canonical" href="https://labflow.com" />
+        <link rel="canonical" href="https://www.celleome.com" />
       </Helmet>
       
       <div className="min-h-screen bg-background">

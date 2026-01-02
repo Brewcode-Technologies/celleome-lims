@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, FlaskConical } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import celleomeLogo from "@/assets/celleome-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,13 +18,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-              <FlaskConical className="w-5 h-5 text-primary" />
-            </div>
-            <span className="font-display font-bold text-xl text-foreground">
-              Lab<span className="text-primary">Flow</span>
-            </span>
+          <a href="#" className="flex items-center group">
+            <img 
+              src={celleomeLogo} 
+              alt="Celleome Diagnostics" 
+              className="h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
