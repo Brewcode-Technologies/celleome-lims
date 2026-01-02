@@ -1,25 +1,25 @@
-import { Code, Settings, Building2, Award } from "lucide-react";
+import { Code, Settings, Users, Shield, Lock, DollarSign } from "lucide-react";
 
 const reasons = [
   {
     icon: Code,
-    title: "Open-Source Flexibility",
-    description: "Customizable like proprietary software but cost-effective with community support and no licensing traps.",
+    title: "Transparency & Flexibility",
+    description: "Open-source software with complete transparency, flexibility, and extendibility. 100% ownership with no hidden license fees.",
   },
   {
-    icon: Settings,
-    title: "Tailored Implementation",
-    description: "End-to-end support, including advanced analytics, compliance training, network upgrades, and multi-lab integrations.",
+    icon: Users,
+    title: "Strong Community Support",
+    description: "Backed by a strong user-community providing continuous support and innovation.",
   },
   {
-    icon: Building2,
-    title: "Industry-Agnostic Design",
-    description: "Perfect for pharmaceuticals, biotech R&D, healthcare, manufacturing, and commercial testing.",
+    icon: Lock,
+    title: "Zero Vendor Lock-in",
+    description: "Full control over your system with no vendor dependencies or licensing traps.",
   },
   {
-    icon: Award,
-    title: "Proven Expertise",
-    description: "Drawing from 20+ years of partnerships, our ProX framework starts with your lab's reality for scalable, future-proof solutions.",
+    icon: DollarSign,
+    title: "Cost-Effective Solution",
+    description: "Low-cost, low-maintenance system with robust data security and 6-12 months payback period.",
   },
 ];
 
