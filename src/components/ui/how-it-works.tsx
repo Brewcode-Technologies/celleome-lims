@@ -20,7 +20,11 @@ export function HowItWorks() {
               first: "Audit Trails",
               second: "Time-Stamped Records", 
               third: "User Attribution",
-              fourth: "Data Preservation"
+              fourth: "Data Preservation",
+              fifth: "Automatic Calculations",
+              sixth: "Controlled Workflows",
+              seventh: "Secure Data Storage",
+              eighth: "Advanced Search"
             }}
             buttonTexts={{
               first: "Celleome",
@@ -30,26 +34,6 @@ export function HowItWorks() {
             lightColor="#3ee0cf"
             className="mx-auto"
           />
-        </div>
-        
-        {/* Additional Compliance Features */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
-            <h3 className="font-semibold text-sm text-foreground mb-1">Automatic Calculations</h3>
-            <p className="text-xs text-muted-foreground">Automated processing</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
-            <h3 className="font-semibold text-sm text-foreground mb-1">Controlled Workflows</h3>
-            <p className="text-xs text-muted-foreground">Structured processes</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
-            <h3 className="font-semibold text-sm text-foreground mb-1">Secure Data Storage</h3>
-            <p className="text-xs text-muted-foreground">Protected repositories</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-background/50 border border-border">
-            <h3 className="font-semibold text-sm text-foreground mb-1">Advanced Search</h3>
-            <p className="text-xs text-muted-foreground">Quick data retrieval</p>
-          </div>
         </div>
       </div>
     </section>

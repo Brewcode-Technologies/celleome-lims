@@ -13,6 +13,10 @@ interface LimsWorkflowProps {
     second: string;
     third: string;
     fourth: string;
+    fifth: string;
+    sixth: string;
+    seventh: string;
+    eighth: string;
   };
   buttonTexts?: {
     first: string;
@@ -33,7 +37,7 @@ const LimsWorkflow = ({
   return (
     <div
       className={cn(
-        "relative flex h-[450px] w-full max-w-[650px] flex-col items-center",
+        "relative flex h-[420px] w-full flex-col items-center",
         className
       )}
     >
@@ -42,7 +46,7 @@ const LimsWorkflow = ({
         className="h-full sm:w-full text-muted"
         width="100%"
         height="100%"
-        viewBox="0 0 280 80"
+        viewBox="0 0 480 120"
       >
         <g
           stroke="currentColor"
@@ -51,10 +55,15 @@ const LimsWorkflow = ({
           strokeDasharray="100 100"
           pathLength="100"
         >
-          <path d="M 40 10 v 15 q 0 5 5 5 h 50 q 5 0 5 5 v 35" />
-          <path d="M 105 10 v 12 q 0 5 5 5 h 25 q 5 0 5 5 v 38" />
-          <path d="M 175 10 v 12 q 0 5 -5 5 h -25 q -5 0 -5 5 v 38" />
-          <path d="M 240 10 v 15 q 0 5 -5 5 h -50 q -5 0 -5 5 v 35" />
+          <path d="M 30 10 v 25 q 0 5 5 5 h 200 q 5 0 5 5 v 0" />
+          <path d="M 90 10 v 25 q 0 5 5 5 h 140 q 5 0 5 5 v 0" />
+          <path d="M 150 10 v 25 q 0 5 5 5 h 80 q 5 0 5 5 v 0" />
+          <path d="M 210 10 v 25 q 0 5 5 5 h 20 q 5 0 5 5 v 0" />
+          <path d="M 270 10 v 25 q 0 5 -5 5 h -20 q -5 0 -5 5 v 0" />
+          <path d="M 330 10 v 25 q 0 5 -5 5 h -80 q -5 0 -5 5 v 0" />
+          <path d="M 390 10 v 25 q 0 5 -5 5 h -140 q -5 0 -5 5 v 0" />
+          <path d="M 450 10 v 25 q 0 5 -5 5 h -200 q -5 0 -5 5 v 0" />
+          <path d="M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15" />
           {/* Animation For Path Starting */}
           <animate
             attributeName="stroke-dashoffset"
@@ -104,6 +113,75 @@ const LimsWorkflow = ({
             fill="url(#lims-grad)"
           />
         </g>
+        <g mask="url(#lims-mask-5)">
+          <circle
+            className="lims-flow lims-light-5"
+            cx="0"
+            cy="0"
+            r="12"
+            fill="url(#lims-grad)"
+          />
+        </g>
+        <g mask="url(#lims-mask-6)">
+          <circle
+            className="lims-flow lims-light-6"
+            cx="0"
+            cy="0"
+            r="12"
+            fill="url(#lims-grad)"
+          />
+        </g>
+        <g mask="url(#lims-mask-7)">
+          <circle
+            className="lims-flow lims-light-7"
+            cx="0"
+            cy="0"
+            r="12"
+            fill="url(#lims-grad)"
+          />
+        </g>
+        <g mask="url(#lims-mask-8)">
+          <circle
+            className="lims-flow lims-light-8"
+            cx="0"
+            cy="0"
+            r="12"
+            fill="url(#lims-grad)"
+          />
+        </g>
+        {/* Final Destination */}
+        <g>
+          <rect
+            fill="#3ee0cf"
+            x="300"
+            y="85"
+            width="80"
+            height="20"
+            rx="10"
+          ></rect>
+          <text
+            x="340"
+            y="97"
+            fill="white"
+            stroke="none"
+            fontSize="4"
+            fontWeight="600"
+            textAnchor="middle"
+          >
+            Complete Audit
+          </text>
+          <text
+            x="340"
+            y="102"
+            fill="white"
+            stroke="none"
+            fontSize="3"
+            fontWeight="400"
+            textAnchor="middle"
+          >
+            Secure Workflows
+          </text>
+        </g>
         {/* Buttons */}
         <g stroke="currentColor" fill="none" strokeWidth="0.4">
           {/* First Button */}
@@ -112,118 +190,238 @@ const LimsWorkflow = ({
               fill="#18181B"
               x="10"
               y="5"
-              width="60"
-              height="12"
-              rx="6"
+              width="40"
+              height="10"
+              rx="5"
             ></rect>
-            <DatabaseIcon x="15" y="8.5"></DatabaseIcon>
+            <DatabaseIcon x="13" y="7.5"></DatabaseIcon>
             <text
-              x="24"
-              y="12.5"
+              x="20"
+              y="11"
               fill="white"
               stroke="none"
-              fontSize="4.5"
+              fontSize="3"
               fontWeight="500"
             >
-              {badgeTexts?.first || "Sample Intake"}
+              {badgeTexts?.first || "Audit"}
             </text>
           </g>
           {/* Second Button */}
           <g>
             <rect
               fill="#18181B"
-              x="75"
+              x="70"
               y="5"
-              width="65"
-              height="12"
-              rx="6"
+              width="40"
+              height="10"
+              rx="5"
             ></rect>
-            <DatabaseIcon x="80" y="8.5"></DatabaseIcon>
+            <DatabaseIcon x="73" y="7.5"></DatabaseIcon>
             <text
-              x="89"
-              y="12.5"
+              x="80"
+              y="11"
               fill="white"
               stroke="none"
-              fontSize="4.5"
+              fontSize="3"
               fontWeight="500"
             >
-              {badgeTexts?.second || "Data Processing"}
+              {badgeTexts?.second || "Time-Stamp"}
             </text>
           </g>
           {/* Third Button */}
           <g>
             <rect
               fill="#18181B"
-              x="145"
+              x="130"
               y="5"
-              width="62"
-              height="12"
-              rx="6"
+              width="40"
+              height="10"
+              rx="5"
             ></rect>
-            <DatabaseIcon x="150" y="8.5"></DatabaseIcon>
+            <DatabaseIcon x="133" y="7.5"></DatabaseIcon>
             <text
-              x="159"
-              y="12.5"
+              x="140"
+              y="11"
               fill="white"
               stroke="none"
-              fontSize="4.5"
+              fontSize="3"
               fontWeight="500"
             >
-              {badgeTexts?.third || "Quality Control"}
+              {badgeTexts?.third || "Attribution"}
             </text>
           </g>
           {/* Fourth Button */}
           <g>
             <rect
               fill="#18181B"
-              x="212"
+              x="190"
               y="5"
-              width="58"
-              height="12"
-              rx="6"
+              width="40"
+              height="10"
+              rx="5"
             ></rect>
-            <DatabaseIcon x="218" y="8.5"></DatabaseIcon>
+            <DatabaseIcon x="193" y="7.5"></DatabaseIcon>
             <text
-              x="226"
-              y="12.5"
+              x="200"
+              y="11"
               fill="white"
               stroke="none"
-              fontSize="4.5"
+              fontSize="3"
               fontWeight="500"
             >
-              {badgeTexts?.fourth || "Final Report"}
+              {badgeTexts?.fourth || "Preserve"}
+            </text>
+          </g>
+          {/* Fifth Button */}
+          <g>
+            <rect
+              fill="#18181B"
+              x="250"
+              y="5"
+              width="40"
+              height="10"
+              rx="5"
+            ></rect>
+            <DatabaseIcon x="253" y="7.5"></DatabaseIcon>
+            <text
+              x="260"
+              y="11"
+              fill="white"
+              stroke="none"
+              fontSize="3"
+              fontWeight="500"
+            >
+              {badgeTexts?.fifth || "Calculate"}
+            </text>
+          </g>
+          {/* Sixth Button */}
+          <g>
+            <rect
+              fill="#18181B"
+              x="310"
+              y="5"
+              width="40"
+              height="10"
+              rx="5"
+            ></rect>
+            <DatabaseIcon x="313" y="7.5"></DatabaseIcon>
+            <text
+              x="320"
+              y="11"
+              fill="white"
+              stroke="none"
+              fontSize="3"
+              fontWeight="500"
+            >
+              {badgeTexts?.sixth || "Workflow"}
+            </text>
+          </g>
+          {/* Seventh Button */}
+          <g>
+            <rect
+              fill="#18181B"
+              x="370"
+              y="5"
+              width="40"
+              height="10"
+              rx="5"
+            ></rect>
+            <DatabaseIcon x="373" y="7.5"></DatabaseIcon>
+            <text
+              x="380"
+              y="11"
+              fill="white"
+              stroke="none"
+              fontSize="3"
+              fontWeight="500"
+            >
+              {badgeTexts?.seventh || "Storage"}
+            </text>
+          </g>
+          {/* Eighth Button */}
+          <g>
+            <rect
+              fill="#18181B"
+              x="430"
+              y="5"
+              width="40"
+              height="10"
+              rx="5"
+            ></rect>
+            <DatabaseIcon x="433" y="7.5"></DatabaseIcon>
+            <text
+              x="440"
+              y="11"
+              fill="white"
+              stroke="none"
+              fontSize="3"
+              fontWeight="500"
+            >
+              {badgeTexts?.eighth || "Search"}
             </text>
           </g>
         </g>
         <defs>
-          {/* 1 - Sample Intake */}
+          {/* 1 - Audit Trails */}
           <mask id="lims-mask-1">
             <path
-              d="M 40 10 v 15 q 0 5 5 5 h 50 q 5 0 5 5 v 35"
+              d="M 30 10 v 25 q 0 5 5 5 h 200 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
               strokeWidth="0.5"
               stroke="white"
             />
           </mask>
-          {/* 2 - Data Processing */}
+          {/* 2 - Time-Stamped Records */}
           <mask id="lims-mask-2">
             <path
-              d="M 105 10 v 12 q 0 5 5 5 h 25 q 5 0 5 5 v 38"
+              d="M 90 10 v 25 q 0 5 5 5 h 140 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
               strokeWidth="0.5"
               stroke="white"
             />
           </mask>
-          {/* 3 - Quality Control */}
+          {/* 3 - User Attribution */}
           <mask id="lims-mask-3">
             <path
-              d="M 175 10 v 12 q 0 5 -5 5 h -25 q -5 0 -5 5 v 38"
+              d="M 150 10 v 25 q 0 5 5 5 h 80 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
               strokeWidth="0.5"
               stroke="white"
             />
           </mask>
-          {/* 4 - Final Report */}
+          {/* 4 - Data Preservation */}
           <mask id="lims-mask-4">
             <path
-              d="M 240 10 v 15 q 0 5 -5 5 h -50 q -5 0 -5 5 v 35"
+              d="M 210 10 v 25 q 0 5 5 5 h 20 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
+              strokeWidth="0.5"
+              stroke="white"
+            />
+          </mask>
+          {/* 5 - Automatic Calculations */}
+          <mask id="lims-mask-5">
+            <path
+              d="M 270 10 v 25 q 0 5 -5 5 h -20 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
+              strokeWidth="0.5"
+              stroke="white"
+            />
+          </mask>
+          {/* 6 - Controlled Workflows */}
+          <mask id="lims-mask-6">
+            <path
+              d="M 330 10 v 25 q 0 5 -5 5 h -80 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
+              strokeWidth="0.5"
+              stroke="white"
+            />
+          </mask>
+          {/* 7 - Secure Storage */}
+          <mask id="lims-mask-7">
+            <path
+              d="M 390 10 v 25 q 0 5 -5 5 h -140 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
+              strokeWidth="0.5"
+              stroke="white"
+            />
+          </mask>
+          {/* 8 - Advanced Search */}
+          <mask id="lims-mask-8">
+            <path
+              d="M 450 10 v 25 q 0 5 -5 5 h -200 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15"
               strokeWidth="0.5"
               stroke="white"
             />

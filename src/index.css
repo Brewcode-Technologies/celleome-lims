@@ -196,19 +196,35 @@
 }
 
 .lims-light-1 {
-  offset-path: path("M 40 10 v 15 q 0 5 5 5 h 50 q 5 0 5 5 v 35");
+  offset-path: path("M 30 10 v 25 q 0 5 5 5 h 200 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
 }
 
 .lims-light-2 {
-  offset-path: path("M 105 10 v 12 q 0 5 5 5 h 25 q 5 0 5 5 v 38");
+  offset-path: path("M 90 10 v 25 q 0 5 5 5 h 140 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
 }
 
 .lims-light-3 {
-  offset-path: path("M 175 10 v 12 q 0 5 -5 5 h -25 q -5 0 -5 5 v 38");
+  offset-path: path("M 150 10 v 25 q 0 5 5 5 h 80 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
 }
 
 .lims-light-4 {
-  offset-path: path("M 240 10 v 15 q 0 5 -5 5 h -50 q -5 0 -5 5 v 35");
+  offset-path: path("M 210 10 v 25 q 0 5 5 5 h 20 q 5 0 5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
+}
+
+.lims-light-5 {
+  offset-path: path("M 270 10 v 25 q 0 5 -5 5 h -20 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
+}
+
+.lims-light-6 {
+  offset-path: path("M 330 10 v 25 q 0 5 -5 5 h -80 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
+}
+
+.lims-light-7 {
+  offset-path: path("M 390 10 v 25 q 0 5 -5 5 h -140 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
+}
+
+.lims-light-8 {
+  offset-path: path("M 450 10 v 25 q 0 5 -5 5 h -200 q -5 0 -5 5 v 0 M 240 45 v 20 q 0 5 5 5 h 80 q 5 0 5 5 v 15");
 }
 
 @keyframes lims-animation-path {
