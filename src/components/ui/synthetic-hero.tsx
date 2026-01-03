@@ -37,12 +37,16 @@ const ShaderPlane = ({
 		<mesh ref={meshRef}>
 			<planeGeometry args={[2, 2]} />
 			<shaderMaterial
-				vertexShader={vertexShader}
-				fragmentShader={fragmentShader}
-				uniforms={uniforms}
-				side={THREE.FrontSide}
-				depthTest={false}
-				depthWrite={false}
+				args={[
+					{
+						vertexShader,
+						fragmentShader,
+						uniforms,
+						side: THREE.FrontSide,
+						depthTest: false,
+						depthWrite: false,
+					}
+				]}
 			/>
 		</mesh>
 	);
@@ -128,15 +132,14 @@ interface HeroProps {
 const SyntheticHero = ({
 	title = "Digitizing laboratories for simplifying compliance.",
 	description = "Affordable, accessible, high-quality Laboratory Information Management System (LIMS) for all. Transform your lab operations with our comprehensive solution.",
-	badgeText = "AI-Powered LIMS",
+	badgeText = "Open-Source LIMS",
 	badgeLabel = "Innovation",
 	ctaButtons = [
 		{ text: "Join Waitlist", href: "#waitlist", primary: true },
-		{ text: "Watch Demo", href: "#demo" },
 	],
 	microDetails = [
 		"Advanced laboratory management",
-		"AI-powered diagnostics",
+		"Open-source solution",
 		"Pharmaceutical & biotech ready",
 	],
 }: HeroProps) => {
