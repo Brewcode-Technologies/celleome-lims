@@ -1,13 +1,14 @@
 "use client";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useMemo, useRef } from "react";
+import { useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import ContactModal from "@/components/ui/contact-modal";
 
 gsap.registerPlugin(SplitText, useGSAP);
 
@@ -135,7 +136,7 @@ const SyntheticHero = ({
 	badgeText = "Open-Source LIMS",
 	badgeLabel = "Innovation",
 	ctaButtons = [
-		{ text: "Join Waitlist", href: "#waitlist", primary: true },
+		{ text: "Join Waitlist", primary: true },
 	],
 	microDetails = [
 		"Advanced laboratory management",
@@ -143,6 +144,7 @@ const SyntheticHero = ({
 		"Pharmaceutical & biotech ready",
 	],
 }: HeroProps) => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
 	const sectionRef = useRef<HTMLElement | null>(null);
 	const badgeWrapperRef = useRef<HTMLDivElement | null>(null);
 	const headingRef = useRef<HTMLHeadingElement | null>(null);
@@ -313,6 +315,7 @@ const SyntheticHero = ({
 								key={index}
 								variant={isPrimary ? undefined : "outline"}
 								className={classes}
+								onClick={() => setIsModalOpen(true)}
 							>
 								{button.text}
 							</Button>
@@ -334,6 +337,11 @@ const SyntheticHero = ({
 					</ul>
 				)}
 			</div>
+
+			<ContactModal 
+				isOpen={isModalOpen} 
+				onClose={() => setIsModalOpen(false)} 
+			/>
 		</section>
 	);
 };

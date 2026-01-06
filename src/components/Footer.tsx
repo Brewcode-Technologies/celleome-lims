@@ -85,9 +85,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Celleome Diagnostics Pvt. Ltd. All rights reserved.
-          </p>
+        
         </div>
       </div>
     </footer>

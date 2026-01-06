@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import ctaImage from "@/assets/cta-image.jpg";
+import { useState } from "react";
+import ContactModal from "@/components/ui/contact-modal";
 
 const CTASection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section className="py-24 lg:py-32 relative overflow-hidden">
       {/* Background */}
@@ -34,7 +37,7 @@ const CTASection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
+              <Button variant="hero" size="xl" className="group" onClick={() => setIsModalOpen(true)}>
                 Join the Waitlist
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -46,6 +49,11 @@ const CTASection = () => {
           </div>
         </div>
       </div>
+      
+      <ContactModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
